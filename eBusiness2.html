@@ -1,0 +1,100 @@
+<?php
+session_start();
+$fullNameValue ="";
+$totalValue = "";
+/*
+* Create a session variable for the mobile number 
+*/
+$totalValue = $_post ['txtTotal'];
+$_SESSION['txtName'] = $fullNameValue;
+$_SESSION['txtTotal'] = $totalValue;
+/*
+* Allocate the mobile number session variable to a text box
+*/
+?>
+<!DOCTYPE html>
+<html lang="en" xmlns="http.//www.w3.org/1999/xhtml">
+    <center><img src="logo1.png" alt="logo"></center>
+<html>
+<head>
+<style>
+body{
+        background-image: url("background.jpg")
+    }
+    ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #F7819F;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+</style>
+</head>
+<body>
+
+<ul>
+  <li><a href="index.html">Home</a></li>
+  <li><a href="Sheehanconsulting.html">Our Products</a></li>
+  <li><a href="eBusiness2.html">Personal details</a></li>
+  <li><a href="eBusiness3.html">Payment</a></li>
+</ul>
+
+</body>
+    <style>
+      body {
+  background-color: lightgrey;
+} 
+
+</style>
+
+    <body>
+        <div class="form">
+            <form name="Details" method="post" action="Ebus3.php">
+                <center>
+                    <table cellspacing="10">
+                        <tr>
+                            <td><b></b></td>
+                            <td><b>Enter your details  below</b></td>
+                            </tr>
+                        <tr>
+                            <td>Username</td>
+                            <td><input type="text" id="txtUser" name="txtUser" value=""Required/></td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Phone number</td>
+                            <td><input type="text" id="txtName" name="txtName" value=""Required/></td>
+                        </tr>
+                        <tr>
+                            <td>Password</td>
+                            <td><input type="text" id="txtPassword" name="txtPassword" value=""Required/></td>
+                        </tr>
+                        <tr>
+                            <td><input type ="hidden" id="txtTotal" name="txtTotal" value="<?php echo $totalValue;?>"/>
+                        </tr>
+                    </table>
+                </center>
+                <center>
+                    <div id="button"><a href="eBusiness3.html">Log In</a></div>
+                </center>
+        </div>
+    </form>
+            
+</body>
+</html>

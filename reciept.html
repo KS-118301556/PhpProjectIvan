@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <html lang="en" xmlns="http.//www.w3.org/1999/xhtml">
+    <center><img src="logo1.png" alt="logo"></center>
+<html>
+<head>
+<style>
+body{
+        background-image: url("background.jpg")
+    }
+    ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #F7819F;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+</style>
+</head>
+<body>
+<center>
+    <h1><b><u>Purchase Receipt</u></b></h1>
+    <br />
+    <br />
+    <style>
+         body{
+                    background-color: lightblue;
+                    font-family: courier new;
+                }
+                
+    </style>
+<!--    //Starting session to get the variable from the last page -->
+<?php
+session_start();
+$totalValue = $_POST['txtTotal'];      
+$fullNameValue = $_POST['txtName'];
+$phoneNumber=$_POST['txtNum'];
+echo "The name is : ".$fullNameValue.".";
+echo "<br></br>";
+echo "Phone Number : ".$phoneNumber.".";
+echo "<br></br>";
+echo "The total value is $".$totalValue.".";
+
+
+?>
+</center>
+</body>
+</html>
+
