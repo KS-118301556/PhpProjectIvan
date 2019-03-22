@@ -24,6 +24,8 @@
             <br>
     <center>  <form method="get" action="Sheehanconsulting.html"> <button type="submit" class="button button" >Continue to Consulting Services</button> </form> </center>
              <br>
+             <a hred="https://phpprojectivan118301556.herokuapp.com/"> Heroku Link </a>
+             <a href="https://github.com/KS-118301556/PhpProjectIvan"> Github Link </a>
         
                         </div>
    
